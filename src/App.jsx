@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-const TOTAL_PAGES = 17
+const TOTAL_PAGES = 16
 
 const fourAs = [
   { letter: 'A', title: 'Avoid', text: 'Avoid the trigger when you can. A gentle “no” can protect your time and energy.' },
@@ -92,7 +92,7 @@ function App() {
       <div className="cover-stamp">A CALMER<br />MIND STARTS<br />WITH ONE<br /><i>BREATH</i></div>
     </section>,
     <section className="editorial-page contents-page">
-      <p className="eyebrow">THIS ISSUE · 17 PAGES FOR A FULLER PICTURE</p>
+      <p className="eyebrow">THIS ISSUE · 16 PAGES FOR A FULLER PICTURE</p>
       <div className="contents-heading">
         <div><h2>A field guide<br />for <em>real days.</em></h2><p className="lead">Short reads, small experiments, and reminders worth keeping.</p></div>
         <span className="contents-edition">ISSUE<br />001<br /><b>2026</b></span>
@@ -108,7 +108,7 @@ function App() {
           ['09', 'The comparison trap', 'A kinder social feed'],
           ['10', 'Come back to this moment', 'A guided breathing pause'],
           ['11–14', 'Make room for recovery', 'Boundaries · study · sleep · habits'],
-          ['15–17', 'Keep the useful bits', 'Poster · support · acknowledgements'],
+          ['15–16', 'Keep the useful bits', 'Support · acknowledgements'],
         ].map(([number, title, detail]) => (
           <div className="contents-row" key={number}><span>{number}</span><strong>{title}</strong><small>{detail}</small></div>
         ))}
@@ -289,15 +289,6 @@ function App() {
         <div className="habit-ticket"><span>THE BORING-BUT-USEFUL LIST</span><p>Drink a glass of water.</p><p>Step outside between classes.</p><p>Text the person you’ve been thinking about.</p><p>Let one non-urgent thing wait.</p><b>REPEAT ONLY IF IT HELPS.</b></div>
       </div>
       <p className="small-note">Tiny counts. Ordinary counts. You count.</p>
-    </section>,
-    <section className="editorial-page poster-page">
-      <p className="eyebrow">05 — THE ART THAT STARTED IT</p>
-      <div className="poster-heading"><div><h2>A reminder<br />to <em>choose calm.</em></h2><p className="lead">Our original “Mind Over Stress” poster, full of thoughtful ideas for finding a little more space.</p></div><span className="poster-index">THE<br />ORIGINAL<br />POSTER</span></div>
-      <figure className="poster-figure">
-        <img src="/mind-over-stress-poster.jpeg" alt="Handmade Mind Over Stress poster with a pencil-drawn face, stress triggers, calming habits and the four A’s to beat stress." />
-        <figcaption>Made with care, for the days when you need a reminder: you can choose your next thought.</figcaption>
-      </figure>
-      <div className="poster-quote">“A healthy mind is the greatest asset.”</div>
     </section>,
     <section className="editorial-page support-page">
       <p className="eyebrow">14 — YOU DON’T HAVE TO FIGURE IT OUT ALONE</p>
